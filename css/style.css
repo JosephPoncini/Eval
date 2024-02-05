@@ -1,0 +1,80 @@
+.bg-dark {
+    color: white;
+}
+
+.greyBg {
+    background-color: grey;
+}
+
+.lightGreyBg {
+    background-color: lightgrey;
+}
+
+.whiteBg {
+    background-color: white;
+}
+
+.gainsbroBg {
+    background-color: gainsboro;
+}
+
+.alpha-1 {
+    opacity: .2;
+}
+
+.alpha-2 {
+    opacity: .4;
+}
+
+.alpha-3 {
+    opacity: .6;
+}
+
+.alpha-4 {
+    opacity: .8;
+}
+
+.boxHeight {
+    height: 100vh;
+}
+
+.dashSection {
+    min-height: 300px;
+    /* text-wrap: wrap; */
+    /* hyphens: auto; */
+}
+
+.auto {
+    hyphens: auto;
+}
+
+.roundedCorner {
+    border-radius: 10px;
+}
+
+.menuBG {
+    background-color: rgb(52, 58, 69);
+}
+
+.white {
+    color: white;
+}
+
+.gainsbro {
+    color: gainsboro;
+}
+
+.remove-underline {
+    text-decoration: none;
+}
+
+.simple-box {
+    color: white;
+    background-color: purple;
+    height: 120px;
+    width: 120px;
+}
+
+.form-select {
+    width: 30%;
+}
