@@ -1,3 +1,4 @@
+//dark/light modes applied. see dashboard/question 3 for me details
 import { turnDark, turnLight } from "./dashboard.js";
 
 let mode = localStorage.getItem('mode');
@@ -29,7 +30,7 @@ api.addEventListener("click", async () => {
     let url;
     let run = true;
     console.log(api.value);
-    switch (api.value) {
+    switch (api.value) { //choose url to fetch based off option selected from select tag
         case "1":
             url = "http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=json";
             break;
@@ -54,7 +55,7 @@ api.addEventListener("click", async () => {
         let response = "Response: \n";
         
         let count = 0;
-        response += ObjectDataToString(data,count);
+        response += ObjectDataToString(data,count); //This function keeps going into itself so every object gets printed as text
 
         apiDataGoesHere.innerText = response;
     }
@@ -65,6 +66,8 @@ const ObjectDataToString = (obj, count) => {
 
     let str = "";
 
+
+    //Added spacers the increase with how many times the function goes into itself
     let space = "\u00A0\u00A0"
     for(let i = 0; i < count; i++){
         space += "\u00A0\u00A0"
@@ -72,6 +75,7 @@ const ObjectDataToString = (obj, count) => {
 
     count += 1;
 
+    //A forEach loop goes through each key value pair and prints them
     Object.entries(obj).forEach(([key, value]) => {
         
         if (typeof (key,value) === "object") {
